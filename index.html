@@ -10,32 +10,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
+<body data-bs-theme="light">
     
-<div class="curzr" hidden></div>
+    <div class="curzr" hidden></div>
     <header class="sticky-top ">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container ">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Estudios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Contacto</a>
-                </li>
-                </ul>
-            </div>
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img class="imgNavBar bounce-in-top" src="./assets/img/favi.png" alt="">
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav opcionesNavBar bounce-in-top">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ">Contacto</a>
+                        </li>
+                        <button onclick="cambiarTema()" class="btn btn-secondary">
+                            
+                                <i id="dl-icon" class="bi bi-moon-fill"></i>
+                            
+                        </button>
+                        
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -44,15 +55,24 @@
         <section class=" heroIndex">
             <video class="videoFondo" src="./assets/videos/heroVideo.mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video>
             <div class="container "> 
-                <div class="row centradPrueba">
-                    <div class="col">
-                        <img class="imgHero" src="./assets/img/favi.png" alt="">
+                <div class="row row-cols-1 row-cols-md-2 centradPrueba">
+                    <div class="col centradoResponsive">
+                        <img class="imgHero text-focus-in" src="./assets/img/favi.png" alt="">
                     </div>
                     <div class="col ">
-                        <p class="textoH1 text-center ">Hola soy <br> <span class="typed-text fw-bold"></span><span class="cursor">&nbsp;</span> </p>
-                        <p class="textoDescriptivo">De Lima - Perú, soy desarrollador formado en Coderhouse y la Universidad Privada del Norte. Especializado en el desarrollo frontend de páginas web, con certificaciones en Desarrollo web, React, Javascript y otros cursos. Si buscas alguien dedicado y apasionado, contáctame. Juntos podemos lograr algo sorprendente.</p>
-                        
+                        <p class="textoH1 text-center text-focus-in">Hola soy <br> <span class="textoMaquinaEscribir typed-text fw-bold"></span><span class="cursor">&nbsp;</span> </p>
+                        <p class="textoDescriptivo text-focus-in">De Lima - Perú, soy desarrollador formado en Coderhouse y la Universidad Privada del Norte. Especializado en el desarrollo frontend de páginas web, con certificaciones en Desarrollo web, React, Javascript y otros cursos. Si buscas alguien dedicado y apasionado, contáctame. Juntos podemos lograr algo sorprendente.
+                            <br>
+                            
+                        Si quieres saber más sobre mi experiencia y habilidades, puedes descargar mi curriculum aquí. Estoy seguro de que encontrarás toda la información que necesitas para tomar una decisión informada.
+                        </p>
+                        <a href="./assets/pdf/Jairo_CV.pdf" class="text-focus-in" download="CV_JAIROVERA.pdf">
+                            <button class="buttonCV container"> 
+                                Descarga CV <i class="bi bi-arrow-down-circle"></i>
+                          </button>
+                        </a>
                     </div>
+                    
                 </div>
                     
             </div>

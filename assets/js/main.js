@@ -1,3 +1,21 @@
+//Modo oscuro/claro
+const temaOscuro = () =>{
+    document.querySelector("body").setAttribute("data-bs-theme","dark")
+    document.querySelector("#dl-icon").setAttribute("class","bi bi-sun-fill")
+}
+
+const temaClaro = () =>{
+    document.querySelector("body").setAttribute("data-bs-theme","light")
+    document.querySelector("#dl-icon").setAttribute("class","bi bi-moon-fill")
+}
+
+const cambiarTema = () =>{
+    document.querySelector("body").getAttribute("data-bs-theme") === "light" ? temaOscuro() : temaClaro();
+}
+
+
+
+//Maquina de escribir
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 const textArray = ["JAIRO VERA", "Programador", "Fotógrafo", "Desarrollador", "Frontend"];
@@ -40,7 +58,6 @@ if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 //CURSOR 
-
 class GlitchEffect {
     constructor() {
       this.root = document.body
